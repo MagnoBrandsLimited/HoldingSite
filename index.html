@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website Under Construction</title>
+    <title>Magno Brands Limited - Under Construction</title>
     <style>
         body {
             display: flex;
@@ -11,55 +11,45 @@
             align-items: center;
             height: 100vh;
             margin: 0;
-            background-color: #f0f0f0;
-            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #333;
         }
         .container {
             text-align: center;
+            border: 1px solid #ddd;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            background-color: #f9f9f9;
         }
         h1 {
-            font-size: 3rem;
-            color: #333;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
         }
         p {
-            font-size: 1.2rem;
-            color: #666;
+            font-size: 1rem;
+            margin-bottom: 10px;
         }
-        .animation {
-            font-size: 4rem;
-            margin: 20px;
+        .contact {
+            font-size: 1rem;
+            color: #555;
+        }
+        .logo {
+            font-size: 3rem;
+            font-weight: bold;
+            color: #0073e6;
+            margin-bottom: 20px;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="animation">🚧</div>
-        <h1>We are Under Construction</h1>
-        <p>Please check back soon!</p>
+        <div class="logo">Magno Brands Limited</div>
+        <h1>Website Under Construction</h1>
+        <p>Our website is currently undergoing scheduled updates.</p>
+        <p class="contact">For inquiries, please contact us at <a href="mailto:admin@magnobrands.com">admin@magnobrands.com</a></p>
     </div>
-    <script>
-        // Adding some simple JavaScript animation to the emoji
-        const animationElement = document.querySelector('.animation');
-        let scale = 1;
-        let increasing = true;
-
-        function animate() {
-            if (increasing) {
-                scale += 0.01;
-                if (scale >= 1.2) {
-                    increasing = false;
-                }
-            } else {
-                scale -= 0.01;
-                if (scale <= 1) {
-                    increasing = true;
-                }
-            }
-            animationElement.style.transform = `scale(${scale})`;
-            requestAnimationFrame(animate);
-        }
-
-        animate();
-    </script>
 </body>
 </html>
