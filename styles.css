@@ -1,5 +1,3 @@
-// CSS Code (styles.css)
-const cssContent = `
 body {
     margin: 0;
     height: 100%;
@@ -55,10 +53,3 @@ body {
 .notify-button:hover {
     background-color: #ff7733;
 }
-
-.notify-note {
-    margin-top: 1rem;
-    font-size: 0.9rem;
-    color: #888;
-}
-`;
