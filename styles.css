@@ -11,6 +11,11 @@ body {
 
 .coming-soon {
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
 }
 
 .coming-title {
@@ -52,4 +57,10 @@ body {
 
 .notify-button:hover {
     background-color: #ff7733;
+}
+
+.notify-note {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: #888;
 }
