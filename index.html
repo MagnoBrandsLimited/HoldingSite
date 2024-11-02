@@ -3,18 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Coming Soon</title>
+    <title>Magno Brands - Coming Soon</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color: #fff;
+            font-family: 'Roboto', sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        .container {
+            text-align: center;
+        }
+        h1 {
+            font-weight: 700;
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+        p {
+            font-weight: 300;
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+        .callout {
+            font-size: 1.2rem;
+            animation: fadeIn 2s ease-in-out infinite alternate;
+        }
+        @keyframes fadeIn {
+            0% { opacity: 0.5; }
+            100% { opacity: 1; }
+        }
+    </style>
 </head>
 <body>
-    <div class="coming-soon">
-        <h1 class="coming-title">Coming Soon</h1>
-        <p class="coming-description">Enter your email address to be notified about upcoming releases.</p>
-        <div class="email-container">
-            <input type="email" placeholder="Please enter your email address" class="email-input" id="email">
-            <button onclick="notifyMe()" class="notify-button">Notify Me</button>
-        </div>
+    <div class="container">
+        <h1>Magno Brands</h1>
+        <p>We're launching soon. Stay tuned!</p>
+        <div class="callout">Contact us at: <a href="mailto:admin@magnobrands.com" style="color: #fff; text-decoration: none;">admin@magnobrands.com</a></div>
     </div>
-    <script src="script.js"></script>
 </body>
 </html>
