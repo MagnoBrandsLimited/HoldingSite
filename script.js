@@ -1,5 +1,3 @@
-// JavaScript Code (script.js)
-const jsContent = `
 function notifyMe() {
     const email = document.getElementById("email").value;
     if (email) {
@@ -8,9 +6,3 @@ function notifyMe() {
         alert('Please enter a valid email address.');
     }
 }
-`;
-
-// Here you can serve or save these contents as files to build the complete "Coming Soon" webpage.
-console.log(htmlContent);
-console.log(cssContent);
-console.log(jsContent);
