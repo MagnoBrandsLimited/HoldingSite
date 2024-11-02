@@ -1,55 +1,107 @@
+// This code will create a simple "Coming Soon" webpage similar to the one in the image using HTML, CSS, and JavaScript.
+
+// HTML Code (index.html)
+const htmlContent = `
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Magno Brands Limited - Under Construction</title>
-    <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            background-color: #ffffff;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            color: #333;
-        }
-        .container {
-            text-align: center;
-            border: 1px solid #ddd;
-            padding: 40px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            max-width: 600px;
-            background-color: #f9f9f9;
-        }
-        h1 {
-            font-size: 2.5rem;
-            margin-bottom: 20px;
-        }
-        p {
-            font-size: 1rem;
-            margin-bottom: 10px;
-        }
-        .contact {
-            font-size: 1rem;
-            color: #555;
-        }
-        .logo {
-            font-size: 3rem;
-            font-weight: bold;
-            color: #0073e6;
-            margin-bottom: 20px;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
+    <title>Coming Soon</title>
 </head>
 <body>
-    <div class="container">
-        <div class="logo">Magno Brands Limited</div>
-        <h1>Website Under Construction</h1>
-        <p>Our website is currently undergoing scheduled updates.</p>
-        <p class="contact">For inquiries, please contact us at <a href="mailto:admin@magnobrands.com">admin@magnobrands.com</a></p>
-    </div>
+    <div class="coming-soon">
+        <h1 class="coming-title">Coming Soon</h1>
+        <p class="coming-description">Enter your email address to be notified about upcoming releases.</p>
+        <div class="email-container">
+            <input type="email" placeholder="Please enter your email address" class="email-input" id="email">
+            <button onclick="notifyMe()" class="notify-button">Notify Me</button>
+        </div>
+            </div>
+    <script src="script.js"></script>
 </body>
 </html>
+`;
+
+// CSS Code (styles.css)
+const cssContent = `
+body {
+    margin: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #121212;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.coming-soon {
+    text-align: center;
+}
+
+.coming-title {
+    font-size: 4rem;
+    background: linear-gradient(90deg, #00ffb0, #00ccff, #ff00b0, #ff5f00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.coming-description {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+}
+
+.email-container {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.email-input {
+    padding: 0.75rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    width: 300px;
+}
+
+.notify-button {
+    padding: 0.75rem;
+    background-color: #ff5f00;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.notify-button:hover {
+    background-color: #ff7733;
+}
+
+.notify-note {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: #888;
+}
+`;
+
+// JavaScript Code (script.js)
+const jsContent = `
+function notifyMe() {
+    const email = document.getElementById("email").value;
+    if (email) {
+        alert('Thanks for signing up! You will be notified when the app launches.');
+    } else {
+        alert('Please enter a valid email address.');
+    }
+}
+`;
+
+// Here you can serve or save these contents as files to build the complete "Coming Soon" webpage.
+console.log(htmlContent);
+console.log(cssContent);
+console.log(jsContent);
