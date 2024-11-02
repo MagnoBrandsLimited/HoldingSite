@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Under Construction</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            text-align: center;
+        }
+        h1 {
+            font-size: 3rem;
+            color: #333;
+        }
+        p {
+            font-size: 1.2rem;
+            color: #666;
+        }
+        .animation {
+            font-size: 4rem;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="animation">🚧</div>
+        <h1>We are Under Construction</h1>
+        <p>Please check back soon!</p>
+    </div>
+    <script>
+        // Adding some simple JavaScript animation to the emoji
+        const animationElement = document.querySelector('.animation');
+        let scale = 1;
+        let increasing = true;
+
+        function animate() {
+            if (increasing) {
+                scale += 0.01;
+                if (scale >= 1.2) {
+                    increasing = false;
+                }
+            } else {
+                scale -= 0.01;
+                if (scale <= 1) {
+                    increasing = true;
+                }
+            }
+            animationElement.style.transform = `scale(${scale})`;
+            requestAnimationFrame(animate);
+        }
+
+        animate();
+    </script>
+</body>
+</html>
