@@ -3,48 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Magno Brands - Coming Soon</title>
+    <title>Magno Brands Limited - Coming Soon</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
     <style>
         body {
             margin: 0;
             padding: 0;
-            background-color: #000;
+            background: linear-gradient(135deg, #1a1a1a, #333);
             color: #fff;
             font-family: 'Roboto', sans-serif;
             display: flex;
             align-items: center;
             justify-content: center;
             height: 100vh;
+            overflow: hidden;
         }
         .container {
             text-align: center;
+            max-width: 600px;
+            padding: 20px;
+            border: 1px solid #444;
+            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+            animation: slideIn 1.5s ease-out;
         }
         h1 {
             font-weight: 700;
             font-size: 3rem;
             margin-bottom: 10px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
         }
         p {
             font-weight: 300;
-            font-size: 1.5rem;
-            margin-bottom: 20px;
+            font-size: 1.4rem;
+            margin-bottom: 30px;
+            color: #bbb;
         }
         .callout {
             font-size: 1.2rem;
-            animation: fadeIn 2s ease-in-out infinite alternate;
+            padding: 15px;
+            margin-top: 20px;
+            background: rgba(0, 188, 212, 0.2);
+            border-left: 4px solid #00bcd4;
+            border-radius: 5px;
+            color: #e0e0e0;
+            font-weight: 500;
         }
-        @keyframes fadeIn {
-            0% { opacity: 0.5; }
-            100% { opacity: 1; }
+        a {
+            color: #00bcd4;
+            text-decoration: none;
+            font-weight: 700;
+            transition: color 0.3s;
+        }
+        a:hover {
+            color: #ff4081;
+        }
+        @keyframes slideIn {
+            0% { transform: translateY(-100%); opacity: 0; }
+            100% { transform: translateY(0); opacity: 1; }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Magno Brands</h1>
-        <p>We're launching soon. Stay tuned!</p>
-        <div class="callout">Contact us at: <a href="mailto:admin@magnobrands.com" style="color: #fff; text-decoration: none;">admin@magnobrands.com</a></div>
+        <h1>Magno Brands Limited</h1>
+        <p>WEBSITE UNDER CONSTRUCTION</p>
+        <div class="callout">For more information, please contact <a href="mailto:signup@magnobrands.com">signup@magnobrands.com</a></div>
     </div>
+    <footer style="position: absolute; bottom: 10px; width: 100%; text-align: center; color: #bbb; font-size: 0.9rem;">
+        &copy; <script>document.write(new Date().getFullYear());</script> Magno Brands Limited. All rights reserved.
+    </footer>
 </body>
 </html>
