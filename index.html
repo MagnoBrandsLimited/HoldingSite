@@ -500,7 +500,8 @@
                             </div>
                             <div>
                                 <h4 class="font-semibold text-white">Email</h4>
-                                <p class="text-gray-400">contact@magnobrands.com</p>
+                                <button onclick="revealEmail()" id="emailBtn" class="text-primary-400 hover:text-primary-300 transition-colors text-left">Click to reveal email</button>
+                                <p id="emailText" class="text-gray-400 hidden">contact@magnobrands.com</p>
                             </div>
                         </div>
                         
@@ -512,7 +513,8 @@
                             </div>
                             <div>
                                 <h4 class="font-semibold text-white">Phone</h4>
-                                <p class="text-gray-400">+44 2039 512343</p>
+                                <button onclick="revealPhone()" id="phoneBtn" class="text-primary-400 hover:text-primary-300 transition-colors text-left">Click to reveal phone</button>
+                                <p id="phoneText" class="text-gray-400 hidden">+44 2039 512343</p>
                             </div>
                         </div>
                         
@@ -587,6 +589,17 @@
         mobileMenuBtn.addEventListener('click', () => {
             mobileMenu.classList.toggle('hidden');
         });
+
+        // Contact info reveal functions (anti-bot protection)
+        function revealEmail() {
+            document.getElementById('emailBtn').classList.add('hidden');
+            document.getElementById('emailText').classList.remove('hidden');
+        }
+
+        function revealPhone() {
+            document.getElementById('phoneBtn').classList.add('hidden');
+            document.getElementById('phoneText').classList.remove('hidden');
+        }
 
         // Smooth scrolling for navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
